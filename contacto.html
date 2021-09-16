@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div class="wraper">
+      <header class="header">
+        <div class="logo" role="img">
+          <img
+            class="logo-img"
+            src="./img/fotoCarlosMurcia.jpg"
+            alt="charliemurcia-photo"
+          />
+        </div>
+        <nav class="navbar" role="navigation">
+          <ul class="navbar__list" role="menubar">
+            <li class="navbar__item" role="menuitem">
+              <a class="navbar__item-link" href="https://charliemur2.github.io/"
+                >About Me</a
+              >
+            </li>
+            <li class="navbar__item" role="menuitem">
+              <a class="navbar__item-link" href="#">Videos</a>
+            </li>
+            <li class="navbar__item" role="menuitem">
+              <a class="navbar__item-link" href="#">Music</a>
+            </li>
+            <li class="contact" role="menuitem">
+              <a class="contact__link" href="./contacto.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="icon">
+          <img class="guitar-icon" src="./img/gtr-icon.png" alt="guitar icon" />
+        </div>
+      </header>
+      <div class="hero">
+        <div class="hero__info">
+          <h1 class="hero__title">A great sound</h1>
+          <p class="hero__text">
+            Do you want to hear my favorites guitars? See the media content to
+            know more abour this fantastic guitars
+          </p>
+          <div class="contact">
+            <a class="contact__link" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+      <section class="media-container">
+        <section class="brands brands__contact">
+        <a
+          class="brands__link"
+          href="https://www.fender.com/en/start"
+          role="link"
+        >
+          <img
+            class="brand__img"
+            src="./img/fender-logo.png"
+            alt="fender logo"
+          />
+        </a>
+        <a class="brands__link" href="https://www.gibson.com/" role="link">
+          <img
+            class="brand__img"
+            src="./img/gibson-logo.png"
+            alt="gibson logo"
+          />
+        </a>
+        <a
+          class="brands__link"
+          href="https://es.wikipedia.org/wiki/Parker_Guitars"
+          role="link"
+        >
+          <img
+            class="brand__img"
+            src="./img/parker-logo.png"
+            alt="parker logo"
+          />
+        </a>
+        <a class="brands__link" href="https://www.ibanez.com/" role="link">
+          <img
+            class="brand__img"
+            src="./img/ibanez-logo.png"
+            alt="ibanez logo"
+          />
+        </a>
+      </section>
+        <div class="media__content">
+          <div class="video">
+            <h4 class="media__title">Fender Guitar Video</h4>
+            <video
+              src="https://res.cloudinary.com/dde3aqape/video/upload/v1627748119/UPB/Fender_American_Standard_Stratocaster_Demo.mp4"
+              controls
+              width="420px"
+              height="300px"
+              class="video__box"
+            ></video>
+          </div>
+          <div class="audio">
+            <h4 class="media__title">Fender Guitar Audio</h4>
+            <audio controls class="audio__box">
+              <source
+                src="https://res.cloudinary.com/dde3aqape/video/upload/v1627748553/UPB/ces_it_bon_gkq9qm.ogg"
+              />
+            </audio>
+            <source
+              src="https://res.cloudinary.com/dde3aqape/video/upload/v1627747388/UPB/ces_it_bon_d0tmyv.mp3"
+            />
+            <source
+              src="https://res.cloudinary.com/dde3aqape/video/upload/v1627748428/UPB/ces_it_bon_tpjtbi.wav"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="form__container">
+        <form action="" class="form">
+          <div class="form__item">
+            <label class="form__label" for="Nombre">Nombre</label>
+            <input class="form__input" type="text" placeholder="Ingrese Su Nombre" />
+          </div>
+          <div class="form__item">
+            <label class="form__label" for="Email">Email</label>
+            <input class="form__input" type="email" placeholder="Ingrese Su Email" />
+          </div>
+          <div class="form__item">
+            <label class="form__label" for="Password">Password</label>
+            <input class="form__input" type="password" placeholder="Ingrese Su Password" />
+          </div>
+          <div class="form__item">
+            <label class="form__label" for="password">Valide su password</label>
+            <input class="form__input" type="password" placeholder="Valide su Password" />
+          </div>
+          <div class="form__item">
+            <label class="form__label" for="Nombre">Nombre</label>
+            <input class="form__input" type="text" placeholder="Ingrese Su Nombre" />
+          </div>
+          <div class="form__select">
+            <label class="form__select-label" for="Departamento"
+              >Departamento</label
+            >
+            <select
+              class="form__select-box"
+              name="Departamento"
+              id="departamento"
+            >
+              <option class="form__select-opt" value="" disabled selected>
+                Selecciona Departamento
+              </option>
+              <option class="form__select-opt" value="Antioquia">
+                Antioquia
+              </option>
+              <option class="form__select-opt" value="Bogota">Bogota</option>
+              <option class="form__select-opt" value="Huila">Huila</option>
+              <option class="form__select-opt" value="Bolivar">Bolivar</option>
+            </select>
+          </div>
+          <div class="form__select">
+            <label class="form__select-label" for="Ciudad">Cuidad</label>
+            <select class="form__select-box" name="Ciudad" id="Ciudad">
+              <option class="form__select-opt" value="" disabled selected>
+                Selecciona Ciudad
+              </option>
+              <option class="form__select-opt" value="Medellin">
+                Medellin
+              </option>
+              <option class="form__select-opt" value="Bello">Bello</option>
+              <option class="form__select-opt" value="Rionegro">
+                Rionegro
+              </option>
+              <option class="form__select-opt" value="Jardin">Jardin</option>
+            </select>
+          </div>
+          <div class="calendar">
+            <input class="calendar__box" type="date" />
+          </div>
+          <div class="form__choose">
+            <h3 class="form__item-title">Your Role</h3>
+            <div class="form__choose-item">
+              <input type="radio" name="Role" />
+              <label class="form__label" for="Nombre">WebMaster</label>
+            </div>
+            <div class="form__choose-item">
+              <input type="radio" name="Role" />
+              <label class="form__label" for="Nombre">Developer</label>
+            </div>
+            <div class="form__choose-item">
+              <input type="radio" name="Role" />
+              <label class="form__label" for="Nombre">Community Manager</label>
+            </div>
+            <div class="form__choose-item">
+              <input type="radio" name="Role" />
+              <label class="form__label" for="Nombre">Scrum Master</label>
+            </div>
+          </div>
+          <div class="form__choose">
+            <h3 class="form__item-title">Usage</h3>
+            <div class="form__choose-item">
+              <input type="checkbox" />
+              <label class="form__label" for="Nombre">Dibujar</label>
+            </div>
+            <div class="form__choose-item">
+              <input type="checkbox" />
+              <label class="form__label" for="Nombre">Leer</label>
+            </div>
+            <div class="form__choose-item">
+              <input type="checkbox" />
+              <label class="form__label" for="Nombre">Editar Imagenes</label>
+            </div>
+            <div class="form__choose-item">
+              <input type="checkbox" />
+              <label class="form__label" for="Nombre">Contenido Multimedia</label>
+            </div>
+          </div>
+          <div class="form__actions">
+            <div class="form__btn">
+              <input type="reset" class="form__btn-item"/>
+            </div>
+            <div class="form__btn">
+              <input type="submit" class="form__btn-item"/>
+            </div>
+          </section>
+        </form>
+      </div>
+      <footer class="footer">
+        <nav class="footernav" role="navigation">
+          <ul class="footernav__list" role="menubar">
+            <li class="footernav__item" role="menuitem">
+              <a
+                class="footernav__item-link"
+                href="https://charliemur2.github.io/"
+                >About Me</a
+              >
+            </li>
+            <li class="footernav__item" role="menuitem">
+              <a class="footernav__item-link" href="#">Videos</a>
+            </li>
+            <li class="footernav__item" role="menuitem">
+              <a class="footernav__item-link" href="#">Music</a>
+            </li>
+            <li class="contact" role="menuitem">
+              <a class="contact__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social">
+          <div class="social__item">
+            <a class="social__link" href="https://github.com/Charliemur2">
+              <img class="social__img" src="./img/github2.png" alt="github" />
+            </a>
+          </div>
+          <div class="social__item">
+            <a
+              class="socoal__link"
+              href="https://www.linkedin.com/in/carlos-andres-murcia-munoz/"
+            >
+              <img
+                class="social__img"
+                src="./img/linkedin.png"
+                alt="LinkedIn"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="location">
+          <address>
+            <h3 class="location__title">Location</h3>
+            <div class="location__item">
+              <img
+                src="./img/home-icon.png"
+                alt="home"
+                class="location__icon"
+              />
+              <p class="location__text">Medellin, Colombia</p>
+            </div>
+            <div class="location__item">
+              <img
+                src="./img/phone-icon.png"
+                alt="phone"
+                class="location__icon"
+              />
+              <p class="location__text">+57 3167757768</p>
+            </div>
+            <div class="location__item">
+              <img
+                src="./img/mail-icon.png"
+                alt="email"
+                class="location__icon"
+              />
+              <p class="location__text">charliemurciamunoz@gmail</p>
+            </div>
+          </address>
+        </div>
+        <p class="copyright">&copy 2021 Carlos Murcia</p>
+      </footer>
+    </div>
+  </body>
+</html>

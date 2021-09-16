@@ -1,0 +1,569 @@
+/* fonts */
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Manrope-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Bold.woff2") format("woff2"),
+    url("../fonts/Manrope-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Manrope-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2"),
+    url("../fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Light.woff2") format("woff2"),
+    url("../fonts/Manrope-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2"),
+    url("../fonts/Manrope-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"),
+    url("../fonts/Manrope-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*  General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope";
+  font-size: 16px;
+}
+
+.wraper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  display: flex;
+  padding: 20px 20px;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+.logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  order: 1;
+}
+.logo-img {
+  width: 30%;
+  border-radius: 50%;
+}
+.icon {
+  display: flex;
+  width: 50%;
+  order: 2;
+  justify-content: center;
+}
+.guitar-icon {
+  width: 30%;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  order: 3;
+}
+.navbar__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.navbar__item {
+  padding: 10px;
+  text-align: center;
+}
+.contact {
+  padding: 10px;
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  margin-top: 20px;
+  height: 45px;
+  width: 100px;
+}
+.contact__link {
+  padding: 10px;
+}
+/* hero */
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: url("../img/hero-img.jpeg");
+  background-size: 100% 100%;
+}
+
+.hero::after {
+  content: "Foto by wallpaperboat.com";
+  bottom: 10px;
+  color: azure;
+  font-size: 0.5rem;
+}
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 20px;
+  color: azure;
+}
+.hero__title {
+  text-align: left;
+  padding: 20px 0;
+}
+.hero__text {
+  padding: 20px 30px 20px 0;
+  text-align: left;
+}
+/* content */
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+}
+.main__title {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+  box-shadow: 0px 24px 64px rgba(22, 27, 45, 0.05);
+  border-radius: 18px;
+  cursor: pointer;
+  padding-bottom: 30px;
+}
+.content__img {
+  width: 100%;
+  height: 40%;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.content__title {
+  padding: 10px;
+  text-align: center;
+}
+.content__text {
+  padding: 10px 10px 30px 10px;
+}
+.content__btn {
+  display: flex;
+  width: 120px;
+  height: 40px;
+  background-color: cornflowerblue;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+/* Brands */
+.brands {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #dcdcdc;
+  padding: 80px 0;
+  box-shadow: 0px 24px 64px rgba(22, 27, 45, 0.05);
+  border-radius: 18px;
+}
+.brands__link {
+  text-align: center;
+}
+.brand__img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+/* footer */
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 10px 20px 10px;
+}
+.footernav {
+  width: 40%;
+}
+.footernav__item-link {
+  color: #dcdcdc;
+}
+.footernav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footernav__item {
+  padding: 5px 0;
+}
+.social {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.social__item {
+  width: 100%;
+}
+.social__img {
+  width: 20%;
+  border-radius: 5px;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  color: #dcdcdc;
+  padding: 40px 0;
+}
+.location__title {
+  padding: 20px 0;
+}
+.location__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0 0px 70px;
+}
+.location__icon {
+  width: 10%;
+}
+.location__text {
+  padding-left: 10px;
+}
+.copyright {
+  color: #dcdcdc;
+}
+/* MEDIUM DEVICES */
+/* header */
+
+@media screen and (min-width: 768px) {
+  .header {
+    position: absolute;
+    width: 100%;
+  }
+  .logo {
+    order: 1;
+    width: 20%;
+  }
+  .icon {
+    order: 3;
+    width: 20%;
+  }
+  .navbar {
+    order: 2;
+    width: 60%;
+    padding-top: 20px;
+  }
+  .navbar__list {
+    flex-direction: row;
+  }
+  .navbar__item-link {
+    color: azure;
+  }
+  .logo-img {
+    width: 50%;
+  }
+  .guitar-icon {
+    width: 50%;
+    border-radius: 50%;
+  }
+  .contact {
+    margin-top: 0;
+  }
+  .hero__img-text {
+    font-size: 0.5rem;
+  }
+  /* hero */
+  .hero__info {
+    width: 50%;
+    padding: 136px 0 115px 61px;
+  }
+  .hero__text {
+    padding: 0 30px 30px 0;
+  }
+  .hero__title {
+    padding-top: 30px;
+  }
+  /* content */
+  .main__title {
+    font-size: 2rem;
+    padding: 60px;
+  }
+  .content__title {
+    font-size: 1.8rem;
+    padding-top: 40px;
+  }
+  .content__text {
+    padding: 40px;
+    font-size: 1.2rem;
+  }
+  /* brands */
+  .brands {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 60px;
+  }
+  .brand__img {
+    width: 80%;
+  }
+  /* footer */
+  .footer {
+    flex-direction: row;
+  }
+  .footernav {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+  .social {
+    width: 20%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .location {
+    width: 40%;
+    text-align: left;
+    text-align: center;
+    padding-top: 0px;
+  }
+  .location__text {
+    padding-left: 10px;
+  }
+  .location__item {
+    padding-left: 0;
+    justify-content: center;
+  }
+  .footernav__item {
+    padding: 15px 0;
+  }
+  .social__img {
+    width: 60%;
+  }
+  .copyright {
+    padding-top: 20px;
+  }
+}
+
+/* DESKTOP DEVICES */
+@media screen and (min-width: 1024px) {
+  /* header */
+  .navbar__item {
+    padding: 10px 30px;
+  }
+  .contact {
+    margin-left: 20px;
+  }
+  .logo-img,
+  .guitar-icon {
+    width: 30%;
+  }
+
+  /* hero */
+  .hero__info {
+    color: azure;
+    width: 50%;
+    right: 20px;
+    top: 20rem;
+    padding: 190px 0px 190px 124px;
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+  .hero__text {
+    padding: 17px 80px 40px 0;
+    font-size: 1.5rem;
+  }
+  /* content */
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .content {
+    width: 40%;
+    position: relative;
+  }
+  .content__img {
+    height: 50%;
+  }
+  .content__btn {
+    position: absolute;
+    bottom: 40px;
+  }
+  /* brands */
+  .brands {
+    padding-top: 100px;
+  }
+  /* footer */
+  .location {
+    padding-top: 40px;
+    padding-left: 200px;
+    text-align: left;
+  }
+  .location__item {
+    justify-content: left;
+  }
+}
+/* ------------------------------------- */
+
+/* Contact page */
+.media-container {
+  background-color: #f4faff;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 40px;
+}
+.media-container__title {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.media__content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.video,
+.audio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.media__title {
+  padding-bottom: 20px;
+}
+.brands__contact {
+  width: 50%;
+}
+.form__container {
+  width: 100%;
+  padding: 30px;
+}
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+.form__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.form__item-title {
+  padding: 5px 0;
+}
+.form__input {
+  width: 400px;
+  height: 45px;
+}
+.form__select {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.form__select-box {
+  width: 200px;
+  height: 45px;
+}
+.calendar {
+  padding: 20px 0;
+}
+.form__choose {
+  padding: 20px 0;
+}
+.form__choose-item {
+  padding: 5px 0;
+}
+.form__label {
+  padding-left: 3px;
+}
+.form__actions {
+  display: flex;
+}
+.form__btn {
+  padding: 10px;
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  margin-top: 20px;
+  height: 45px;
+  width: 100px;
+  margin-right: 10px;
+  text-align: center;
+}
+.form__btn-item {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 0.8rem;
+}
